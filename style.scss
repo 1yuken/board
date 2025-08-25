@@ -254,6 +254,7 @@ html {
     }
     span {
       color: #3b82f6;
+      display: none;
     }
     .dropdown-arrow {
       transition: transform 0.2s ease;
@@ -332,7 +333,7 @@ html {
     align-items: flex-start;
     gap: 12px;
 
-    flex-direction: column;
+    // flex-direction: column;
   }
 }
 
@@ -469,6 +470,11 @@ html {
   .header {
     &__content-btns {
       flex-direction: row;
+    }
+    &__btn-categories {
+      span {
+        display: block;
+      }
     }
   }
   .recommendations {

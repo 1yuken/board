@@ -248,6 +248,7 @@ html {
 }
 .header__btn-categories span {
   color: #3b82f6;
+  display: none;
 }
 .header__btn-categories .dropdown-arrow {
   transition: transform 0.2s ease;
@@ -321,7 +322,6 @@ html {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  flex-direction: column;
 }
 
 .categories-dropdown {
@@ -442,6 +442,9 @@ html {
 @media (min-width: 768px) {
   .header__content-btns {
     flex-direction: row;
+  }
+  .header__btn-categories span {
+    display: block;
   }
   .recommendations__list {
     grid-template-columns: repeat(3, 1fr);
